@@ -74,6 +74,8 @@ a {
   text-decoration: none;
   margin-left: 23px;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .links:hover,
 .links:focus {
@@ -291,14 +293,17 @@ h2 {
   align-items: center;
   cursor: pointer;
 }
-
+.members-social-links {
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .members-social-links:hover,
 .members-social-links:focus {
   background-color: #2196f3;
-  border-radius: 50%;
 }
-.members-social-links a {
+.members-social-links .social-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .members-social-links:hover .social-icon,
 .members-social-links:focus .social-icon {
@@ -323,9 +328,11 @@ h2 {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-images {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list li:hover,
 .clients-list li:focus {
@@ -426,6 +433,7 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-links:hover,
 .footer-social-links:focus {
@@ -463,6 +471,9 @@ address {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -488,6 +499,7 @@ address {
   position: relative;
   overflow: hidden;
   line-height: 0%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -520,12 +532,9 @@ address {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
-
   position: relative;
-
   background-color: #ffffff;
 }
-
 .product {
   font-weight: 700;
   font-size: 18px;
