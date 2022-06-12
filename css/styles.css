@@ -560,7 +560,6 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 528px;
   min-height: 581px;
   background-color: #ffffff;
@@ -568,7 +567,7 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   animation-name: modalappear;
-  animation-duration: 2000ms;
+  animation-duration: 1500ms;
   animation-timing-function: linear;
   animation-delay: 0ms;
   animation-iteration-count: 1;
